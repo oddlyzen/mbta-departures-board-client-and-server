@@ -23,7 +23,4 @@ the MBTA train departures in a table.
 ### Contact Information
 If you have any questions, feel free to contact me:
 
-Mark Coates
-Email:  nycrubypro@gmail.com
-Cell:   (401) 952-5647
-Github: oddlyzen
+Mark Coates (@oddlyzen)
