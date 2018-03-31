@@ -1,5 +1,5 @@
 # MBTA Departure Board Client and Server Applications
-![App Screenshot](/images/shot.png | width=300)
+![App Screenshot](/images/shot.png)
 This is a Node.js application to accomplish the given task of displaying
 departures from the North and South Stations. The server application consumes
 the CSV file from the MBTA development server and serves it up in real-time via
