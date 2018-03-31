@@ -47,7 +47,7 @@ class App extends Component {
         <Panel bsStyle="primary">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Departures - {moment()
-              .format("dddd MM-DD-YYYY")} - {moment().format('h:mm A')}
+              .format("dddd MM-DD-YYYY - h:mm A")}
             </Panel.Title>
           </Panel.Heading>
           <Panel.Body>
