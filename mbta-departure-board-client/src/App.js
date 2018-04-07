@@ -15,17 +15,19 @@ class App extends Component {
   }
   render() {
     const { response } = this.state;
-    const Panel = require('react-bootstrap/lib/Panel');
-    const Table = require('react-bootstrap/lib/Table');
-    const ProgressBar = require('react-bootstrap/lib/ProgressBar');
-    const moment = require('moment')
+    const Panel        = require('react-bootstrap/lib/Panel');
+    const Table        = require('react-bootstrap/lib/Table');
+    const ProgressBar  = require('react-bootstrap/lib/ProgressBar');
+    const moment       = require('moment')
 
     let departures = [];
     if (response) {
       departures = response.map((trip)=>
         <tr>
           <td>{trip.Origin}</td>
-          <td>{moment.unix(trip.ScheduledTime).format('h:mm A')}</td>
+          <td>
+            {moment.unix(trip.ScheduledTime).format('h:mm A')}
+          </td>
           <td>{trip.Destination}</td>
           <td>{trip.Trip}</td>
           <td>{trip.Track}</td>
@@ -36,7 +38,7 @@ class App extends Component {
       departures =  (
         <tr>
           <td colSpan="7">
-          <h6>LOADING...</h6>
+            <h6>LOADING...</h6>
             <ProgressBar active bsStyle="warning" now={66} />
           </td>
         </tr>
